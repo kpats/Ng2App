@@ -1,3 +1,26 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container-fluid">
+  <!--<alert type="success">Welcome</alert>-->
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+        aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">Welcome to ABC</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <p class="navbar-text navbar-right">Signed in as KP&nbsp;</p>
+      <ul class="nav navbar-nav">
+        <li> <a routerLink="/login" routerLinkActive="active">Login</a> </li>
+        <li> <a routerLink="/admin" routerLinkActive="active">Admin</a> </li>
+        <li> <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a> </li>
+      </ul>
+    </div>
+  </nav>
+
+  <router-outlet></router-outlet>
+</div>
